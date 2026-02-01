@@ -54,9 +54,13 @@ class lc3
     public:
         i16 reg[R_COUNT];
         i16 memory[MEMORY_MAX];
+        void fetch();
+        void decode();
+        void execute();
 };
 
 #endif
 
 // 1111   1111   1111   1111
 // opcode param1 param2 param3
+
